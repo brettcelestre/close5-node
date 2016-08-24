@@ -3,7 +3,6 @@
 module.exports = {
     
     data: [{
-    // [{
         "id" : "53fb8f26456e74467b000001",
         "loc" : [ 
             36.1665407118837763, 
@@ -110,6 +109,6 @@ module.exports = {
         "price" : -1,
         "status" : "removed",
         "createdAt" : ISODate("2014-08-26T23:54:48.754Z")
-    }];
+    }]
 
 };
