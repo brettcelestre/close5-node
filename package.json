@@ -1,0 +1,30 @@
+{
+  "name": "close5-node-challenge",
+  "version": "1.0.0",
+  "description": "Close 5 Node.js Challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "node app.js",
+    "node app.js": "node app.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettcelestre/close5-node.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "Brett Celestre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brettcelestre/close5-node/issues"
+  },
+  "homepage": "https://github.com/brettcelestre/close5-node#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
