@@ -1,6 +1,6 @@
 
-var server = require('../app.js'),
-    data = require('../data.js');
+var server = require('../../app.js'),
+    data = require('../../data.js');
 
 module.exports = function(app) {
   
@@ -8,19 +8,19 @@ module.exports = function(app) {
     .get(function (req, res, next) {
       // Stores id number from request parameter
       var id = req.params.id,
-          usersItems = {'userIdData': []};
-          
+          item = { itemData: []};
+      
       // Iterates over data objects
       data.data.forEach(function(val) {
         // If item id matches requested id
-        if ( val.userId === id ) {
+        if ( val.id === id ) {
           // Push into item dataset
-          usersItems.userIdData.push(val);
+          item.itemData.push(val);
         }
       });
       
-      // Sends back users item dataset
-      res.send(usersItems);
+      // Sends item dataset
+      res.send(item);
     });
     
 };

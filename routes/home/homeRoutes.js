@@ -1,5 +1,5 @@
 
-var server = require('../app.js');
+var server = require('../../app.js');
 var path   = require('path');
        
 module.exports = function(app) {

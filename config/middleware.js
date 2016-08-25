@@ -31,10 +31,10 @@ module.exports = function (app, express) {
   app.use('/api/range', rangeRouter);
 
   // Requires router files to each route
-  require('../home/homeRoutes.js')(homeRouter);
-  require('../recent/recentRoutes.js')(recentRouter);
-  require('../price/priceRoutes.js')(priceRouter);
-  require('../id/idRoutes.js')(idRouter);
-  require('../userId/userIdRoutes.js')(userIdRouter);
-  require('../range/rangeRoutes.js')(rangeRouter);
+  require('../routes/home/homeRoutes.js')(homeRouter);
+  require('../routes/recent/recentRoutes.js')(recentRouter);
+  require('../routes/price/priceRoutes.js')(priceRouter);
+  require('../routes/id/idRoutes.js')(idRouter);
+  require('../routes/userId/userIdRoutes.js')(userIdRouter);
+  require('../routes/range/rangeRoutes.js')(rangeRouter);
 };
