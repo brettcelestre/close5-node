@@ -2,11 +2,11 @@
   "name": "close5-node-challenge",
   "version": "1.0.0",
   "description": "Close 5 Node.js Challenge",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "node app.js",
-    "node app.js": "node server.js",
-    "start": "node server.js"
+    "node app.js": "node app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

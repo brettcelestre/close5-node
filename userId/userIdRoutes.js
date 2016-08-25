@@ -1,5 +1,5 @@
 
-var server = require('../server.js'),
+var server = require('../app.js'),
     data = require('../data.js');
 
 module.exports = function(app) {
