@@ -8,7 +8,7 @@ var apiGuide = 'Close5 Code Challenge: API Guide \n' +
                'localhost:8080/api/price/highest    - The entire listed sorted by the item’s price Descending \n' +
                'localhost:8080/api/id/ID_NUMBER     - Any single item by its id \n' +
                'localhost:8080/api/userid/ID_NUMBER - An array of items based on any userId \n' +
-               'localhost:8080/api/range            - A route to request for items within 50 miles of their location coordinates' ;
+               'localhost:8080/api/range/LAT/LON    - A route to request for items within 50 miles of their location coordinates' ;
                
 module.exports = function(app) {
   
