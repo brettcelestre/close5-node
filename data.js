@@ -1,6 +1,6 @@
 
-// ISODate format runs in the MongoDB shell and doesn't run in JavaScript code. I changed them all to
-// new Date. Mongoose usually converts it when querying the database.
+// ISODate format runs in the MongoDB shell and doesn't run in JavaScript, Mongoose usually 
+// converts it when querying from the database. I changed them all to new Date.
 
 module.exports = {
     

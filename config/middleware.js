@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 module.exports = function (app, express) {
   
-  //use express router mini-app
+  // Sets up Express routers
   var homeRouter = express.Router(),
       recentRouter = express.Router(),
       idRouter = express.Router(),
@@ -30,6 +30,7 @@ module.exports = function (app, express) {
   // A route to request for items within 50 miles of their location coordinates
   app.use('/api/range', rangeRouter);
 
+  // Requires router files to each route
   require('../home/homeRoutes.js')(homeRouter);
   require('../recent/recentRoutes.js')(recentRouter);
   require('../price/priceRoutes.js')(priceRouter);

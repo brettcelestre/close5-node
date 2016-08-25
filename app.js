@@ -1,6 +1,5 @@
 
 var express = require('express');
-// var data = require('./data.js')
 var middleware = require('./config/middleware.js');
 
 var app = express();

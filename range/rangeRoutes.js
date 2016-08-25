@@ -49,6 +49,7 @@ module.exports = function(app) {
         }
       });
       
+      // Sends back items data
       res.send(items);
     });
     
