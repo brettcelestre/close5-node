@@ -1,16 +1,23 @@
 
-var server = require('../server.js');
+var server = require('../server.js'),
+    data = require('../data.js');
 
 module.exports = function(app) {
   
   app.route('/lowest')
     .get(function(req, res) {
-      res.send('lowest GET');
+      var lowest = data.data.sort(function(a,b){
+        return a.price - b.price;
+      });
+      res.send({ 'lowestPriceData': lowest });
     }); 
   
   app.route('/highest')
     .get(function(req, res) {
-      res.send('highest GET');
+      var highest = data.data.sort(function(a,b){
+        return b.price - a.price;
+      });
+      res.send({ 'highestPriceData': highest });
     });
   
 };

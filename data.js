@@ -1,4 +1,6 @@
 
+// ISODate format runs in the MongoDB shell and doesn't run in JavaScript code. I changed them all to
+// new Date. Mongoose usually converts it when querying the database.
 
 module.exports = {
     
@@ -12,7 +14,8 @@ module.exports = {
         "description" : null,
         "price" : -1,
         "status" : "removed",
-        "createdAt" : ISODate("2014-08-25T19:31:50.180Z")
+        // "createdAt" : ISODate("2014-08-25T19:31:50.180Z")
+        "createdAt" : new Date("2014-08-25T19:31:50.180Z")
     },
     {
         "id" : "53fb8f81456e74467b000002",
@@ -24,7 +27,8 @@ module.exports = {
         "description" : "Cup",
         "price" : 20,
         "status" : "removed",
-        "createdAt" : ISODate("2014-08-25T19:33:21.153Z")
+        // "createdAt" : ISODate("2014-08-25T19:33:21.153Z")
+        "createdAt" : new Date("2014-08-25T19:33:21.153Z")
     },
     {
         "id" : "53fbb9b6456e74467b000004",
@@ -36,7 +40,8 @@ module.exports = {
         "description" : null,
         "price" : -1,
         "status" : "removed",
-        "createdAt" : ISODate("2014-08-25T22:33:26.282Z")
+        // "createdAt" : ISODate("2014-08-25T22:33:26.282Z")
+        "createdAt" : new Date("2014-08-25T22:33:26.282Z")
     },
     {
         "id" : "53fbe21c456e74467b000006",
@@ -48,7 +53,8 @@ module.exports = {
         "description" : null,
         "price" : 20,
         "status" : "removed",
-        "createdAt" : ISODate("2014-08-26T01:25:48.754Z")
+        // "createdAt" : ISODate("2014-08-26T01:25:48.754Z")
+        "createdAt" : new Date("2014-08-26T01:25:48.754Z")
     },
     {
         "id" : "53fcc82a45b6f4db35000001",
@@ -60,7 +66,8 @@ module.exports = {
         "description" : null,
         "price" : -1,
         "status" : "tos",
-        "createdAt" : ISODate("2014-08-26T17:47:22.885Z")
+        // "createdAt" : ISODate("2014-08-26T17:47:22.885Z")
+        "createdAt" : new Date("2014-08-26T17:47:22.885Z")
     },
     {
         "id" : "53fccf9945b6f4db3500000a",
@@ -72,7 +79,8 @@ module.exports = {
         "description" : "BBQ",
         "price" : 0,
         "status" : "tos",
-        "createdAt" : ISODate("2014-08-26T18:19:05.321Z")
+        // "createdAt" : ISODate("2014-08-26T18:19:05.321Z")
+        "createdAt" : new Date("2014-08-26T18:19:05.321Z")
     },
     {
         "id" : "53fcf20e646d8f233e000006",
@@ -84,7 +92,8 @@ module.exports = {
         "description" : "How do we get on this?",
         "price" : 0,
         "status" : "tos",
-        "createdAt" : ISODate("2014-08-26T20:46:06.044Z")
+        // "createdAt" : ISODate("2014-08-26T20:46:06.044Z")
+        "createdAt" : new Date("2014-08-26T20:46:06.044Z")
     },
     {
         "id" : "53fd1182646d8f233e000014",
@@ -96,7 +105,8 @@ module.exports = {
         "description" : null,
         "price" : -1,
         "status" : "removed",
-        "createdAt" : ISODate("2014-08-26T23:00:18.800Z")
+        // "createdAt" : ISODate("2014-08-26T23:00:18.800Z")
+        "createdAt" : new Date("2014-08-26T23:00:18.800Z")
     },
     {
         "id" : "53fd1e48646d8f233e00001b",
@@ -108,7 +118,8 @@ module.exports = {
         "description" : "Markers NOT previously chomped on.",
         "price" : -1,
         "status" : "removed",
-        "createdAt" : ISODate("2014-08-26T23:54:48.754Z")
+        // "createdAt" : ISODate("2014-08-26T23:54:48.754Z")
+        "createdAt" : new Date("2014-08-26T23:54:48.754Z")
     }]
 
 };

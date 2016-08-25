@@ -1,11 +1,15 @@
 
-var server = require('../server.js');
+var server = require('../server.js'),
+    data = require('../data.js');
 
 module.exports = function(app) {
   
   app.route('/')
     .get(function(req, res) {
-      res.send('recent GET');
+      var recent = data.data.sort(function(a,b){
+        return b.createdAt - a.createdAt;
+      });
+      res.send({ 'recentData': recent });
     }); 
   
 };
