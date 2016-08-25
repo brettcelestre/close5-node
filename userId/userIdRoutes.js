@@ -8,12 +8,11 @@ module.exports = function(app) {
     .get(function (req, res, next) {
       var id = req.params.id,
           usersItems = {'userIdData': []};
-      
       data.data.forEach(function(val) {
         if ( val.userId === id ) {
           usersItems.userIdData.push(val);
         }
-      })
+      });
       res.send(usersItems);
     });
     
